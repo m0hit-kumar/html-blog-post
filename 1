@@ -1,0 +1,197 @@
+
+
+Introduction
+Since know we have quite good knowledge of what is html where its use and what are the various version of html that we learnt in previous tutorial.
+
+if haven't watched it yet don't worry click on the back to go to that tutorial and join afterwards going through it.
+
+<< Back 
+
+
+Here in this tutorial we will talk about most used tags only rest we will cover in next tutorial if want to see it click on link given at the end of this page.
+
+So ,lets start ..
+
+Most commonly used tags in HTML
+
+The preceding tags are explained with examples for better understanding :-
+
+<! Doctype> 
+This tags has no closing ,it basically indicates the various versions of HTML or XHTML being used in the document.
+
+Example:- 
+
+Lets take if we HTML we our using HTML version 4.01 so we write like this in tag.
+
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+                    "http://www.w3.org/TR/html4/loose.dtd">
+    <head>
+<html version="-//W3C//DTD HTML 4.01 Transitional//EN">
+    ...
+    </head>
+    <body>
+    ...
+    </body>
+</html>
+
+
+
+As now you understand how its done ,so now from above we conclude the basic format for declaration.
+
+
+<!ENTITY % HTML.Version "-//W3C//DTD HTML 3.2 Final//EN">
+<!ENTITY % version.attr "VERSION CDATA #FIXED '%HTML.Version;'">
+<!ATTLIST HTML %version.attr;>
+
+
+<HTML> <HEAD> <BODY> <TITLE>
+
+This tags our basic building block in every code these tags our compulsory to add , these together make basic structure of  the document.
+If using xmlns  then required inclusion of XHTML  in place of <HTML>
+
+These <html> </html> tags contain the whole code part means every single bit of you document enclosed in it.
+
+In <head> </head> tags contain the various other tags like <title></title> ,  <link> ,<meta> y,<script> </script> ,  you will learn about these tags in this tutorial soon.
+
+
+Example:-
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+...
+..
+.
+</body>
+</html>
+
+
+<meta>
+The <meta> tag defines metadata about an HTML document. Metadata is basically provide information about document. <meta> tags always go between <head> element, and are used to specify character set, page description, keywords, author of the document, and viewport settings etc.
+
+Example:- 
+
+  
+  
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="learn html with Bigfootcode">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta name="author" content="Bigfootcode">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>most commonly used tags in html</title>
+</head>
+
+
+
+
+  
+
+
+<H1> <H2> <H3> <H4> <H5> <H6>
+
+These above tags our used to write headlines
+lines of different size
+
+<H1> </H1> text include in  these two tag is
+ used as headlines  , similarly other are used
+
+Example:-
+
+
+<h1>This is heading 1</h1>
+<h2>This is heading 2</h2>
+<h3>This is heading 3</h3>
+<h4>This is heading 4</h4>
+<h5>This is heading 5</h5>
+<h6>This is heading 6</h6>
+
+<Hr>
+<hr>tag  is used to insert horizontal bar across the screen.
+
+
+Example:- 
+<hr size="5" /> 
+<p>
+<p> tag is used to pair a text and indicating a paragraph of text.
+
+Example:-
+
+<p>in this tutorial we will learn
+ about the most used tag in HTML</p>
+
+
+
+<em> </em>
+<em> tag include a small pieace of text that has to required special attention or to emphasized on.
+
+Example:- 
+
+<em> i am important </em>
+
+
+<Img>
+<Img> tag is used to provide a graphic image to a document . We can specify height width and alternative text to the image between this tag.
+
+Example:-
+
+<Img src="Bigfootcode.gif" alt="logo"
+ height="100" width="100">
+<br>
+<br> tag is used to insert a line break in a document.
+
+<link>
+A<link> tag specifies a special relationship between the current document and another document that to be linked. Most commonly, it is used to specify a style sheet used by the document.
+
+Example:-
+
+
+<link rel="stylesheet"  href="global.css"
+ type="text/css">
+
+<script> </script>
+Script tab allow you to do that leave bad scripting language in HTML.
+
+Example:-
+
+<script type=" text/javascript">
+alert("doubt in comment box please")
+</script>
+
+
+<style> </style>
+<style> tags is used to inclose a document specifying style of document mainly we inclosed CSS in it.
+
+Example:-
+<style type="text/css">
+p {color :red; font-size:-2px ;}
+</style>
+
+
+<div></div>
+
+<div> tag used to divide document into different sections.
+
+Example:-
+
+
+<html>
+<head>
+<title></title>
+</head>
+<body>
+<div class="div_one">
+           <h1>This is a div 1 <h1>
+</div>
+<div class="div_two">
+  <h1>This is a div 2 <h1>
+</div>
+</body>
+</html>
